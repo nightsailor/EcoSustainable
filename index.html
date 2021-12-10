@@ -2,50 +2,27 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>Green Less Life</title>
-  <style>
-  </style>
-  <!--required for pie chart-->
-  <script>
-    window.onload = function() {
-      var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        title: {
-          text: "Desktop Search Engine Market Share - 2016"
-        },
-        data: [{
-          type: "pie",
-          startAngle: 240,
-          yValueFormatString: "##0.00\"%\"",
-          indexLabel: "{label} {y}",
-          dataPoints: [
-            {y: 79.45, label: "Google"},
-            {y: 7.31, label: "Bing"},
-            {y: 7.06, label: "Baidu"},
-            {y: 4.91, label: "Yahoo"},
-            {y: 1.26, label: "Others"}
-          ]
-        }]
-      });
-      chart.render();
-    }
-  </script>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+	 crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/style.css">
+	<title>Green Less Life</title>
+	<style>
+	</style>
 </head>
 
 <body>
-  <div class="d-flex h-100 text-center text-white bg-dark">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <nav class="navbar navbar-dark bg-transparent fixed-top" aria-label="First navbar example">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="bg-transparent" width="40" src="img/logo4-bg.png"></img>
+	<div class="d-flex h-100 text-center text-white bg-dark">
+		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+			<nav class="navbar navbar-dark bg-transparent fixed-top" aria-label="First navbar example">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img class="bg-transparent" width="40" src="img/logo4-bg.png"></img>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,19 +35,29 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Image Classification</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
+              <li class="nav-item dropdown inline-d-block">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="https://share.streamlit.io/cyrixninja/waste-classifier-v2/main/waste_classifier.py">Image Classifier</a></li>
+              <li><a class="dropdown-item" href="https://share.streamlit.io/cyrixninja/carbonfootprintcalculator/main/main.py">Carbon Footprint Calculator</a></li>
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+            </ul>
+          </li>
             </ul>
           </div>
         </div>
       </nav>
-      <main class="px-3 mx-5 w-50 text-start text-white mt-auto">
+      <main class="px-3 mx-5 w-50 text-start text-black mt-auto">
         <h1>We recycle for your future</h1>
-        <p class="text-white-50 pt-3 pb-5">
+        <p class="text-black-50 pt-3 pb-5">
           Let's contribute together to a clean and healthy environment.<br>
           Contact us for more information and partnership.
         </p>
@@ -94,7 +81,7 @@
   </div>
   <main id="about" class="w-100 h-100 demo-wrap">
     <div class="container px-4 py-5 demo-content" id="icon-grid">
-      <h2 class="pb-2 text-center text-green h3">SERVICES and PRODUCTS</h2>
+      <h2 class="pb-2 text-center text-white h3">SERVICES and PRODUCTS</h2>
       <!-- AREAS of RESEARCH -->
       <!-- AREAS of DEVELOPMENT -->
       <!-- border-bottom -->
@@ -168,51 +155,49 @@
       </div>
     </div>
   </main>
-  <section id="carbon" class="w-100 h-100 border bg-dark">
-    <div class="container px-4 py-5 demo-content">
-      <h2 class="pb-2 text-center text-green h3">CARBON SUBTAINABILITY CHECKER</h2>
-      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-      <hr>
-      <div id="piechart"></div>
-      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script type="text/javascript">
-      // Load google charts
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-      // Draw the chart and set the chart values
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['Work', 8],
-        ['Eat', 2],
-        ['TV', 4],
-        ['Gym', 2],
-        ['Sleep', 8]
-      ]);
-        // Optional; add a title and set the width and height of the chart
-        var options = {'title':'My Average Day', 'width':550, 'height':400};
-        // Display the chart inside the <div> element with id="piechart"
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-        chart.draw(data, options);
-      }
-      </script>
+  <section id="carbon" class="w-100 h-100 d-flex justify-content-center align-items-center bg-light demo-wrap carbon mx-0 px-0">
+    <div class="container py-5 demo-content w-100 mx-0 px-0">
+      <!-- <h2 class="pb-2 text-center text-green h3">CARBON SUBTAINABILITY CHECKER</h2> -->
+      <div class="row featurette w-100 d-flex justify-content-between">
+      
+      <div class="col-md-5 w-50 d-flex justify-content-center">
+        <div class="">
+            <img width="90%" src="https://images.squarespace-cdn.com/content/v1/56f9dbb68a65e290bb28506f/1562174678256-H8CZCH0JWBAYE6XILPQI/reduce+carbon+footprint+with+The+Chicago+Greenbox.jpg?format=1000w"></img>
+          </div>
+      </div>
+
+      <div class="col-md-7 w-50 d-flex flex-column justify-content-center">
+        <h2 class="featurette-heading">
+          Carbon Footprint Calculator. <br><span class="p-5 text-muted"> It takes only a few easy click.</span>
+        </h2>
+        <p class="my-4">
+          Calculate your carbon emissions <br>
+          from Buildings, Cars, Flights and <br>
+          other vehicles.
+          <a class="text-decoration-none btn btn-teal-700 d-block w-25 mt-2" href="https://share.streamlit.io/cyrixninja/carbonfootprintcalculator/main/main.py">
+          Try it here <i class="fas fa-arrow-right"></i>
+          </a>
+          </p>
+      </div>
+      
+      </div>
     </div>
   </section>
   <section id="classification" class="w-100 h-100 d-flex justify-content-center align-items-center demo-wrap classif">
     <div class="container marketing demo-content">
       <div class="row featurette">
         <div class="col-md-7 d-flex flex-column justify-content-center">
-          <h2 class="featurette-heading pb-5">Environment Image Classification. <br><span class="p-5 text-muted">It’ll blow your mind.</span></h2>
-          <p class="lead">
-            categorizing and labeling groups of <br>
+          <h2>Environment Image Classification. <br><span>
+          It’ll blow your mind.</span></h2>
+          <p>
+            Categorizing and labeling groups of <br>
             pixels or vectors within an image based <br>
-            on specific rules. Try it
-            <a class="text-decoration-none" href="/">here</a>
+            on specific rules.
+            <a class="text-decoration-none btn btn-teal-700 d-block w-25 mt-2" href="https://share.streamlit.io/cyrixninja/waste-classifier-v2/main/waste_classifier.py">
+          Try it here <i class="fas fa-arrow-right"></i></a>
           </p>
         </div>
         <div class="col-md-5">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/bg8.jpg"></img>
         </div>
       </div>
     </div>
