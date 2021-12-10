@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Green Less Life</title>
+  <style>
+  </style>
+  <!--required for pie chart-->
+  <script>
+    window.onload = function() {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        title: {
+          text: "Desktop Search Engine Market Share - 2016"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 240,
+          yValueFormatString: "##0.00\"%\"",
+          indexLabel: "{label} {y}",
+          dataPoints: [
+            {y: 79.45, label: "Google"},
+            {y: 7.31, label: "Bing"},
+            {y: 7.06, label: "Baidu"},
+            {y: 4.91, label: "Yahoo"},
+            {y: 1.26, label: "Others"}
+          ]
+        }]
+      });
+      chart.render();
+    }
+  </script>
+</head>
+
+<body>
+  <div class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <nav class="navbar navbar-dark bg-transparent fixed-top" aria-label="First navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="bg-transparent" width="40" src="img/logo4-bg.png"></img>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse inline-d-flex" id="navbarsExample01" style="margin: 0 30%; margin-top: -4%;">
+            <ul class="navbar-nav me-auto mb-2 inline-d-flex flex-row justify-content-around">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Image Classification</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main class="px-3 mx-5 w-50 text-start text-white mt-auto">
+        <h1>We recycle for your future</h1>
+        <p class="text-white-50 pt-3 pb-5">
+          Let's contribute together to a clean and healthy environment.<br>
+          Contact us for more information and partnership.
+        </p>
+        <p class="lead">
+          <a href="#contact" class="btn btn-md btn-success rounded-pill px-4 py-2">Contact Us</a>
+          <!-- fw-bold border-white bg-white text-black -->
+        </p>
+      </main>
+      <div class="mt-auto text-white-50 mx-auto">
+        <a href="#about" class="text-white-50 nav-link text-center">
+          Swipe down
+          <i class="far fa-chevron-down d-block"></i>
+        </a>
+      </div>
+      <div class="">
+        <a href="#" class="text-black-50 nav-link text-end fixed-bottom" style="right: 20px; z-index: 2; font-size: 2em;">
+          <i class="fas fa-angle-up d-block"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <main id="about" class="w-100 h-100 demo-wrap">
+    <div class="container px-4 py-5 demo-content" id="icon-grid">
+      <h2 class="pb-2 text-center text-green h3">SERVICES and PRODUCTS</h2>
+      <!-- AREAS of RESEARCH -->
+      <!-- AREAS of DEVELOPMENT -->
+      <!-- border-bottom -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-5 py-5 w-100 mx-auto">
+        <div class="col d-flex align-items-start">
+          <span style="font-size: 1.75em;" class="bi text-muted flex-shrink-0 me-3">
+            <i class="fas fa-recycle"></i>
+          </span>
+          <div>
+            <h4 class="fw-bold mb-0">RECYCLING WASTE</h4>
+            <p>
+              The recovery of energy from waste materials is often included in this concept. ... Recyclable materials include many kinds of glass, paper, cardboard, metal, plastic, tires, textiles, batteries, and electronics.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <span style="font-size: 1.75em;" class="bi text-muted flex-shrink-0 me-3">
+            <i class="far fa-check-circle"></i>
+          </span>
+          <div>
+            <h4 class="fw-bold mb-0">AIR QUALITY</h4>
+            <p>
+              The Air Quality Index is based on measurement of particulate matter (PM2.5 and PM10), Ozone (O3), Nitrogen Dioxide (NO2), Sulfur Dioxide (SO2) and Carbon Monoxide (CO) emissions.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <span style="font-size: 1.75em;" class="bi text-muted flex-shrink-0 me-3">
+            <i class="far fa-water-lower"></i>
+          </span>
+          <div>
+            <h4 class="fw-bold mb-0">CLEAN WATER</h4>
+            <p>
+              To ensure clean water and sanitation for all, we all have to take action. Get inspired here.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <span style="font-size: 1.75em;" class="bi text-muted flex-shrink-0 me-3">
+            <i class="fal fa-trees"></i>
+          </span>
+          <div>
+            <h4 class="fw-bold mb-0">WILDLIFE</h4>
+            <p>
+              Our goal is to protect endangered species and their habitats through awareness, support, and training.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <span style="font-size: 1.75em;" class="bi text-muted flex-shrink-0 me-3">
+            <i class="fab fa-pagelines"></i>
+          </span>
+          <div>
+            <h4 class="fw-bold mb-0">Plantation</h4>
+            <p>
+              A plantation is a large-scale estate, generally centered on a plantation house, meant for farming that specializes in cash crops. The crops that are grown include cotton, coffee, tea, cocoa, sugar cane, opium, sisal, oil seeds, oil palms, fruits, rubber trees and forest trees.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <span style="font-size: 1.75em;" class="bi text-muted flex-shrink-0 me-3">
+            <i class="fas fa-globe-africa"></i>
+          </span>
+          <div>
+            <h4 class="fw-bold mb-0">ECOSYSTEM</h4>
+            <p>
+              As the earth's human population has increased, natural ecosystems have declined and changes in the balance of natural cycles has had a negative impact on both humans and other living systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section id="carbon" class="w-100 h-100 border bg-dark">
+    <div class="container px-4 py-5 demo-content">
+      <h2 class="pb-2 text-center text-green h3">CARBON SUBTAINABILITY CHECKER</h2>
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <hr>
+      <div id="piechart"></div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+      // Load google charts
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      // Draw the chart and set the chart values
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Work', 8],
+        ['Eat', 2],
+        ['TV', 4],
+        ['Gym', 2],
+        ['Sleep', 8]
+      ]);
+        // Optional; add a title and set the width and height of the chart
+        var options = {'title':'My Average Day', 'width':550, 'height':400};
+        // Display the chart inside the <div> element with id="piechart"
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+      </script>
+    </div>
+  </section>
+  <section id="classification" class="w-100 h-100 d-flex justify-content-center align-items-center demo-wrap classif">
+    <div class="container marketing demo-content">
+      <div class="row featurette">
+        <div class="col-md-7 d-flex flex-column justify-content-center">
+          <h2 class="featurette-heading pb-5">Environment Image Classification. <br><span class="p-5 text-muted">It’ll blow your mind.</span></h2>
+          <p class="lead">
+            categorizing and labeling groups of <br>
+            pixels or vectors within an image based <br>
+            on specific rules. Try it
+            <a class="text-decoration-none" href="/">here</a>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/bg8.jpg"></img>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="bg-white h-100">
+    <div class="container px-4 pt-4 demo-content" id="icon-grid">
+      <h2 class="pb-2 text-center text-green h3">CONTACT US</h2>
+    </div>
+    <div class="container py-5">
+      <div class="row mx-3">
+        <div class="order-lg-2 mb-3 mb-lg-0 col-lg-6 w-50 d-flex justify-content-center">
+          <div class="">
+            <img height="100%" src="img/contact2.png"></img>
+          </div>
+        </div>
+        <div class="order-lg-1 col-lg-6">
+          <div class="card rounded shadow p-3 p-md-4">
+            <h3 class="text-center font-weight-bold text-teal-700">
+              Have a query?
+            </h3>
+            <!--
+            <p class="text-center">
+              Have a query? Drop us a message right now
+            </p> -->
+            <form action="">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="John Doe">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="johndoe@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" cols="30" rows="6" placeholder="Describe your query here"></textarea>
+              </div>
+              <div class="btn btn-block btn-teal-700 w-100">
+                Send
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light">
+    <div class="container">
+      <footer class="py-5 mt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <img class="mb-2" src="img/logo5.png" alt="" width="50" height="50">
+            <span class="font-weight-bold text-teal-700">Eco Sustainable</span>
+            <small class="d-block mb-3 text-muted">
+              Let's contribute together to a clean and healthy environment.
+            </small>
+          </div>
+          <div class="col col-md-2"></div>
+          <div class="col-6 col-md">
+            <h5 class="text-teal-700">Features</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#classification">Image Classification</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#carbon">Carbon Sustainability Checker</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#gallery">Gallery</a>
+              </li>
+              <!--
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#revolution">Revolutionary Steps</a>
+              </li> -->
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-teal-700">Quick Links</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#">Home</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#about">About</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#about">Resources</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="text-teal-700">About</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#">Team</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#">Locations</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#">Privacy</a>
+              </li>
+              <li>
+                <a class="link-secondary" style="text-decoration: none" href="#">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="bg-light border-top">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-3">
+          <span> © EcoSustainable 2021 </span>
+          <ul class="list-inline list-unstyled mb-0">
+            <li class="list-inline-item">
+              <a href="#" class="text-teal-700">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-teal-700">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-teal-700">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-teal-700">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      if ($(window).scrollTop() >= $(window).height()) {
+        $(".fixed-top").removeClass("navbar-dark").addClass("navbar-light");
+        $(".fixed-bottom").removeClass("d-none");
+      } else {
+        $(".fixed-top").removeClass("navbar-light").addClass("navbar-dark");
+        $(".fixed-bottom").addClass("d-none");
+      }
+    })
+  })
+  </script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
